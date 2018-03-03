@@ -1,0 +1,9 @@
+<div class="container col-5" *ngIf="show">
+    <h2>Customers Contacts</h2>
+    <div class="card">
+      <div class="card-header">{{contact.name | uppercase}}</div>
+      <div class="card-body">{{contact.surname | uppercase}}</div> 
+      <div class="card-footer">{{contact.email}}</div>
+      <div class="card-body">{{contact.phone}}</div>
+    </div>
+  </div>

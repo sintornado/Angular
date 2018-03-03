@@ -1,0 +1,19 @@
+<table class="table table-dark table-hover" >
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Email</th>
+        <th>Phone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let contact of contacts; let i = index" (click)="onRowClick(contact)" >
+          <td>{{contact.name}}</td>
+          <td>{{contact.surname}}</td>
+          <td>{{contact.email}}</td>
+          <td>{{contact.phone}}</td>
+      </tr>
+    </tbody>
+  </table>
+  
